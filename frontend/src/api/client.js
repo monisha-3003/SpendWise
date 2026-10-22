@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // Single configurable API base URL (see frontend/.env.example)
-export const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000/api';
+export const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'https://spendwise-04ks.onrender.com/api';
 
 const client = axios.create({ baseURL: API_BASE_URL, timeout: 15000 });
 
